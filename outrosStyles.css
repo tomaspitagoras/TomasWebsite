@@ -1,0 +1,20 @@
+
+/* Jogo */
+.top{background: #5d3d65}
+body.jogo .nav a[aria-current="page"],body.jogo .nav a[aria-current="page"]:hover{border-bottom-color:var(--cream)}
+body.jogo :focus-visible{outline-color:var(--cream)}
+body.jogo .top{border-bottom-color:rgba(241,234,200,.4)}
+.steps{list-style:none;margin:32px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.steps li{font-size:12.5px;font-weight:700;letter-spacing:.12em;padding:6px 14px;border:1px solid var(--cream);border-radius:2px}
+.steps li.now{background:var(--cream);color:var(--ink)}
+.steps li.on{background:var(--ink);border-color:var(--ink)}
+.round{background:var(--cream);color:var(--ink);border-radius:2px;padding:clamp(24px,4vw,48px);margin-top:32px;max-width:720px;display:flex;flex-direction:column;gap:18px;animation:entra .35s ease both}
+.round h2{font-size:clamp(26px,4.4vw,40px);font-weight:800;overflow-wrap:anywhere}
+.round h2.puzzle{letter-spacing:.06em}
+.round .btn.ghost{color:var(--ink);border-color:var(--ink)}
+.round input[type=text]{font:inherit;font-size:16px;color:var(--ink);background:#fbf7e3;border:1px solid rgba(59,55,52,.45);border-radius:2px;padding:11px 12px}
+.round .btn-row{margin-top:0}
+.round .verdict{min-height:1.6em}
+.dica{font-family:var(--serif);font-style:italic;font-size:21px;line-height:1.4}
+@keyframes entra{from{opacity:0;transform:translateY(10px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.round{animation:none}}
